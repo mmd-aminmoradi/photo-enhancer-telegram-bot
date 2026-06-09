@@ -1,24 +1,22 @@
-```markdown
-# 🎯 Photo Enhancer Telegram Bot
+# Photo Enhancer Telegram Bot
 
-**A professional Telegram bot that enhances photo quality and restores faces using GFPGAN AI**
+A professional Telegram bot that enhances photo quality and restores faces using GFPGAN AI
 
-[![Telegram](https://img.shields.io/badge/Telegram-Join%20Channel-blue)](https://t.me/Hezar_code)
-[![Python](https://img.shields.io/badge/Python-3.10%2B-green)](https://www.python.org/)
+Telegram Channel: https://t.me/Hezar_code
 
 ---
 
-## ✨ Features
+Features
 
-- 📏 Upscale images 2x, 3x, or 4x
-- 😊 Face enhancement with 6 levels (Low to Max)
-- 🔪 Sharpening options (Soft, Normal, Strong, Off)
-- 🎛️ Interactive button interface
-- 📁 High quality by sending as Document
+- Upscale images 2x, 3x, or 4x
+- Face enhancement with 6 levels (Low to Max)
+- Sharpening options (Soft, Normal, Strong, Off)
+- Interactive button interface
+- High quality by sending as Document
 
 ---
 
-## 🛠 Technologies
+Technologies
 
 - Python 3.10+
 - Aiogram (Telegram Bot Framework)
@@ -28,60 +26,52 @@
 
 ---
 
-## 📦 Installation on Local Computer
+Installation on Local Computer
 
-**Requirements:**
+Requirements:
 - Python 3.10 or higher
 - 8GB+ RAM
 - 4GB free disk space
 
-**Steps:**
+Steps:
 
 1. Clone the repository
-```bash
+
 git clone https://github.com/mmd-aminmoradi/photo-enhancer-telegram-bot.git
 cd photo-enhancer-telegram-bot
-```
 
-1. Install dependencies
+2. Install dependencies
 
-```bash
 pip install -r requirements.txt
-```
 
-1. Download the AI model
+3. Download the AI model
 
-```bash
 wget https://github.com/TencentARC/GFPGAN/releases/download/v1.3.0/GFPGANv1.4.pth
-```
 
-1. Add your bot token
-   Open bot.py and replace توکن_ربات_خود_را_اینجا_وارد_کنید with your real token from BotFather.
-2. Run the bot
+4. Add your bot token
 
-```bash
+Open bot.py and replace YOUR_TOKEN_HERE with your real token from BotFather.
+
+5. Run the bot
+
 python bot.py
-```
 
 ---
 
-☁️ Installation on Google Colab (Free GPU)
+Installation on Google Colab (Free GPU)
 
-Best for: Users without a powerful computer
+Best for users without a powerful computer.
 
 1. Go to colab.research.google.com
 2. Create a new notebook
 3. In the first cell, run:
 
-```python
 !pip install aiogram torch torchvision opencv-python-headless pillow numpy gfpgan nest-asyncio
 !wget https://github.com/TencentARC/GFPGAN/releases/download/v1.3.0/GFPGANv1.4.pth
-```
 
-1. In the second cell, paste your entire bot.py code (add your token)
-2. In the third cell, run:
+4. In the second cell, paste your entire bot.py code (add your token)
+5. In the third cell, run:
 
-```python
 import asyncio
 import nest_asyncio
 nest_asyncio.apply()
@@ -91,13 +81,12 @@ async def run():
     await main()
 
 asyncio.run(run())
-```
 
-Note: Colab stops after 1 hour of inactivity. Use UptimeRobot to keep it alive.
+Note: Colab stops after 1 hour of inactivity.
 
 ---
 
-📱 How to Use the Bot
+How to Use the Bot
 
 1. Send /start to your bot on Telegram
 2. Send a photo as Document (File) (not as a compressed photo)
@@ -107,25 +96,24 @@ Note: Colab stops after 1 hour of inactivity. Use UptimeRobot to keep it alive.
 
 ---
 
-❓ Troubleshooting
+Troubleshooting
 
-Problem Solution
-Module not found Run pip install -r requirements.txt
-Out of memory Use Google Colab instead
-Bot doesn't respond Check your token is correct
-Low quality output Send photo as Document, not as Photo
+Problem: Module not found
+Solution: Run pip install -r requirements.txt
+
+Problem: Out of memory
+Solution: Use Google Colab instead
+
+Problem: Bot doesn't respond
+Solution: Check your token is correct
+
+Problem: Low quality output
+Solution: Send photo as Document, not as Photo
 
 ---
 
-📞 Contact
+Author: Amin
 
-· Telegram Channel: @Hezar_code
-· Author: Amin
+Telegram Channel: https://t.me/Hezar_code
 
----
-
-📄 License
-
-MIT License
-
-```
+License: MIT
