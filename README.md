@@ -1,26 +1,131 @@
+```markdown
 # 🎯 Photo Enhancer Telegram Bot
 
-ربات تلگرامی پیشرفته برای افزایش کیفیت عکس و بهبود چهره با استفاده از هوش مصنوعی GFPGAN
+**A professional Telegram bot that enhances photo quality and restores faces using GFPGAN AI**
 
-## ✨ قابلیت‌ها
+[![Telegram](https://img.shields.io/badge/Telegram-Join%20Channel-blue)](https://t.me/Hezar_code)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-green)](https://www.python.org/)
 
-- افزایش ابعاد عکس (2x، 3x، 4x)
-- بهبود و بازسازی چهره با 6 سطح مختلف
-- شارپ‌سازی تصویر (نرم، معمولی، قوی)
-- رابط کاربری دکمه‌ای ساده
-- پشتیبانی از ارسال فایل با کیفیت اصلی
+---
 
-## 🛠 تکنولوژی‌ها
+## ✨ Features
+
+- 📏 Upscale images 2x, 3x, or 4x
+- 😊 Face enhancement with 6 levels (Low to Max)
+- 🔪 Sharpening options (Soft, Normal, Strong, Off)
+- 🎛️ Interactive button interface
+- 📁 High quality by sending as Document
+
+---
+
+## 🛠 Technologies
 
 - Python 3.10+
 - Aiogram (Telegram Bot Framework)
-- GFPGAN (Face Enhancement)
+- GFPGAN (Face Enhancement AI)
 - PyTorch & OpenCV
 - Pillow & NumPy
 
-## 📦 نصب و راه‌اندازی
+---
 
-### پیش‌نیازها
+## 📦 Installation on Local Computer
+
+**Requirements:**
+- Python 3.10 or higher
+- 8GB+ RAM
+- 4GB free disk space
+
+**Steps:**
+
+1. Clone the repository
+```bash
+git clone https://github.com/mmd-aminmoradi/photo-enhancer-telegram-bot.git
+cd photo-enhancer-telegram-bot
+```
+
+1. Install dependencies
 
 ```bash
-pip install aiogram torch torchvision opencv-python-headless pillow numpy gfpgan nest-asyncio
+pip install -r requirements.txt
+```
+
+1. Download the AI model
+
+```bash
+wget https://github.com/TencentARC/GFPGAN/releases/download/v1.3.0/GFPGANv1.4.pth
+```
+
+1. Add your bot token
+   Open bot.py and replace توکن_ربات_خود_را_اینجا_وارد_کنید with your real token from BotFather.
+2. Run the bot
+
+```bash
+python bot.py
+```
+
+---
+
+☁️ Installation on Google Colab (Free GPU)
+
+Best for: Users without a powerful computer
+
+1. Go to colab.research.google.com
+2. Create a new notebook
+3. In the first cell, run:
+
+```python
+!pip install aiogram torch torchvision opencv-python-headless pillow numpy gfpgan nest-asyncio
+!wget https://github.com/TencentARC/GFPGAN/releases/download/v1.3.0/GFPGANv1.4.pth
+```
+
+1. In the second cell, paste your entire bot.py code (add your token)
+2. In the third cell, run:
+
+```python
+import asyncio
+import nest_asyncio
+nest_asyncio.apply()
+
+async def run():
+    from bot import main
+    await main()
+
+asyncio.run(run())
+```
+
+Note: Colab stops after 1 hour of inactivity. Use UptimeRobot to keep it alive.
+
+---
+
+📱 How to Use the Bot
+
+1. Send /start to your bot on Telegram
+2. Send a photo as Document (File) (not as a compressed photo)
+3. Adjust settings using the buttons
+4. Click Start Processing
+5. Get your enhanced photo
+
+---
+
+❓ Troubleshooting
+
+Problem Solution
+Module not found Run pip install -r requirements.txt
+Out of memory Use Google Colab instead
+Bot doesn't respond Check your token is correct
+Low quality output Send photo as Document, not as Photo
+
+---
+
+📞 Contact
+
+· Telegram Channel: @Hezar_code
+· Author: Amin
+
+---
+
+📄 License
+
+MIT License
+
+```
