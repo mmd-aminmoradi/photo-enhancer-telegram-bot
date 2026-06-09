@@ -1,11 +1,5 @@
 ```markdown
-# Photo Enhancer Telegram Bot
 
-A professional Telegram bot that enhances photo quality and restores faces using GFPGAN AI.
-
-[![Telegram](https://img.shields.io/badge/Join-Telegram%20Channel-blue)](https://t.me/Hezar_code)
-[![GitHub](https://img.shields.io/badge/GitHub-Repo-black)](https://github.com/mmd-aminmoradi/photo-enhancer-telegram-bot)
-[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
 ---
 
@@ -256,6 +250,6 @@ Star This Project
 
 If you found this project helpful, please give it a star ⭐ on GitHub and join our Telegram channel!
 
-https://img.shields.io/badge/Join-Telegram%20Channel-blue
+
 
 ```
